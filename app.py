@@ -5,7 +5,7 @@ import pandas as pd
 HOME_AIRPORTS = ('LGW', 'LIS', 'LYS')
 PAIRED_AIRPORTS = ('FUE', 'AMS', 'ORY')
 
-#df = pd.read_parquet("traffic_10lines.parquet")
+df = pd.read_parquet("traffic_10lines.parquet")
 
 st.title('Traffic Forecaster')
 
@@ -22,12 +22,8 @@ with st.sidebar:
 
 
 st.write('Home Airport selected:', home_airport)
-st.write('Paired Airport selected:', home_airport)
+st.write('Paired Airport selected:', paired_airport)
 st.write('Days of forecast:', nb_days)
 st.write('Date selected:', forecast_date)
 
-
-
-#A partir du df il applique le query et au niveau du format: affiche le .widget
-#st.write(df.query('home_airpot = "{}"'.format(home_airport)).shape[0])
 
