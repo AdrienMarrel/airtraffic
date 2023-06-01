@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1L_FQ5oBJXVa-Q2n3hqrIkDn_87EKbqGb
 """
 
-streamlit run base_app.py
-
 !pip install --upgrade pandas.profiling
 
 !pip install mlforecast
